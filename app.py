@@ -30,6 +30,7 @@ modelList = [
 
 def modelChange(name):
     # Models are downloaded to  ~/.cache/huggingface/hub.
+    global modelName, model
     modelName = name
     if not modelName in modelList:
         modelName = "blip2-opt-2.7b"
